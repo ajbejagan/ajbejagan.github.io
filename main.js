@@ -8,7 +8,12 @@ const downloadResume = () => {
   document.body.removeChild(hrefTag)
 }
 
-const button = document.querySelector('#download-resume')
-button.addEventListener('click', () => {
+const mobileDownloadButton = document.querySelector('#download-resume-mobile')
+mobileDownloadButton.addEventListener('click', () => {
+  downloadResume()
+})
+
+const webDownloadButton = document.querySelector('#download-resume-web')
+webDownloadButton.addEventListener('click', () => {
   downloadResume()
 })
