@@ -1,7 +1,7 @@
 const downloadResume = () => {
   const hrefTag = document.createElement('a')
-  hrefTag.href = './assets/pdfs/ajCV.pdf'
-  hrefTag.download = 'ajResume.pdf'
+  hrefTag.href = './assets/pdfs/CV_latest.pdf'
+  hrefTag.download = 'ajCV.pdf'
 
   document.body.appendChild(hrefTag)
   hrefTag.click();
